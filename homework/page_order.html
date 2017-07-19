@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+
+    <style>
+        img {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Wendy%27s_logo_2012.svg/1229px-Wendy%27s_logo_2012.svg.png" alt="Wendys">
+    </div>
+
+    <hr>
+    <h2>Order Form</h2>
+
+    <form action="">
+
+        <fieldset>
+            <h3>Name</h3>
+            First:
+            <input type="text" name='name'> Last:
+            <input type="text" name='name'>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <h3>Email</h3>
+            <input type="email">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <h3>Phone number</h3>
+            <input type="tel">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            What would you like to order?
+
+            <br><br> Combo 1 - Soup w/drink & choice of a side
+            <br> Combo 2 - Hamburger w/drink & choice of a side
+            <br> Combo 3 - Hot dog w/drink & choice of a side
+            <br> Combo 4 - Sandwich w/drink & choice of a side
+
+            <br><br><select name="" id="">
+    <option value="Combo 1">Combo 1</option>
+    <option value="Combo 2">Combo 2</option>
+    <option value="Combo 3">Combo 3</option>
+    <option value="Combo 4">Combo 4</option>
+</select>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            What side would you like to have?
+            <br>
+            <label for="">Side:</label>
+            <input type="radio" name='side' value='Fries' checked> Fries
+            <input type="radio" name='side' value='Onion rings'> Onion rings
+            <input type="radio" name='side' value='Salad'> Salad
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <label for="">Payment</label>
+            <input type="radio" name='payment' value='credit' checked> Credit
+            <input type="radio" name='payment' value='debit'> Debit
+            <input type="radio" name='payment' value='cash'> Cash
+
+        </fieldset>
+
+        <br>Comments:
+        <br><br>
+        <textarea name="Comments" id="" cols="60" rows="7"></textarea>
+
+        <br><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
