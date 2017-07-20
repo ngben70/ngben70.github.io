@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            /*            width: 200px;*/
+            height: 100px;
+            background-color: tomato;
+        }
+        
+        .block {
+            padding: 10px 10px 10px 10px;
+            margin: 55px 50px 60px 50px;
+            padding: 10px 50px 13px 13px;
+        }
+        
+        #inlineblock {
+            display: inline-block;
+            margin: 50px 50px 50px 50px;
+            padding: 10px 50px 13px 13px;
+        }
+        
+        #three {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--   block has width, margin-right no effect, block has default width, margin-right decrease the width -->
+    <h2>block</h2>
+    <div id="first" class='block'>block</div>
+    <div id="second"></div>
+    <!--    margin-right has effects until its right elements get pushed to the next line-->
+    <h2>inline block</h2>
+    <div id="inlineblock">inlineblock</div>
+    <div id="three">three</div>
+</body>
+</html>

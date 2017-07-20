@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            border: solid 1px red;
+            /*can change height*/
+        }
+        
+        span {
+            border: solid 1px red;
+            /*can change height using font size*/
+        }
+        
+        #inlineblock {
+            border: solid 1px red;
+            display: inline-block;
+        }
+        #none {
+            border: solid;
+            display: none;
+            width: 50px;
+            height: 50px;
+        }
+        
+        #viz {
+            width: 50px;
+            height: 50px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>block</h1>
+    <div></div>
+
+    <h1>inline</h1>
+    <span></span>
+
+    <h1>inline-block</h1>
+    <div id='inlineblock'></div>
+    
+    <h1>none</h1>
+    <div id="none"></div>
+    
+    <h1>invisible</h1>
+    <div id="viz"></div>
+    <!--the text is still there, so the space does not not clear-->
+</body>
+</html>
