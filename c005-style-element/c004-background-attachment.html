@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            height: 10000px;
+        }
+        
+        .container {
+            width: 500px;
+            height: 200px;
+            border: double blue;
+          
+            background-image: url(/media/img/forest-fog.jpg);
+            background-repeat: no-repeat;
+            overflow: auto;
+            background-size: 70%;
+
+        }
+        
+        #scroll {
+            background-attachment: scroll;
+        }
+        
+        #item {
+            height: 400px;
+            border: solid red;
+        }
+        
+        #local {
+            background-attachment: local;
+        }
+        #fixed {
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="scroll">
+        <div id="item"></div>
+    </div>
+    <div class="container" id="local">
+        <div id="item"></div>
+    </div>
+    <div class='container' id='fixed'>
+        <div id="item"></div>
+    </div>
+</body>
+</html>

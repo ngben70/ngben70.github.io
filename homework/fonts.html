@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Fonts</title>
@@ -10,7 +11,7 @@
             font-size: 3em;
             font-family: monospace;
             font-weight: 800;
-            text-shadow: 2px 2px 0px gray, 2.5px 2.5px 3px gray;
+            text-shadow: 2px 2px 0px gray, 2.5px 2.5px 3px gray, 4px 4px 4px gray;
         }
         
         span {
@@ -24,20 +25,28 @@
             font-family: sans-serif;
             line-height: 1.5;
         }
+        
+        p:first-line {
+            font-weight: bold;
+        }
+        
         div {
             letter-spacing: 1px;
             text-decoration: underline;
+            text-align: right;
         }
+
     </style>
 </head>
 
 <body>
     <h1>Javascript</h1>
 
-    <p><b><span>javascript</span> is a high-level, dynamic, untyped, and interpreted</b> programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production;</p>
+    <p><span>javascript</span> is a high-level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production;</p>
 
-    <div align="right">
+    <div>
         <i>From Wikipedia, the free encyclopedia</i>
     </div>
 </body>
+
 </html>
