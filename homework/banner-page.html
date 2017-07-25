@@ -6,18 +6,22 @@
     <title>Banner</title>
 
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
         html {
             height: 100%;
         }
         
         body {
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
             border: solid;
             height: 100%;
             border-style: double;
             border-width: thick;
+            text-align: center;
         }
         
         h1 {
@@ -29,9 +33,11 @@
         }
         
         hr {
+            margin-top: 30px;
             background-color: black;
             height: 0.5px;
             width: 150px;
+            display: inline-block;
         }
         
         #container {
@@ -54,8 +60,8 @@
             display: inline-block;
             height: 30px;
         }
+        
         input[type=email] {
-            margin-left: 420px;
             margin-right: 10px;
             width: 400px;
             border: 2px solid orangered;
@@ -83,6 +89,7 @@
 <body>
     <h1>Teens Programming</h1>
     <hr>
+    
     <div id="container">
         <div id="first">Supporting a well-spent life, a bright career and entrepreneurship</div>
         <div id="second">Promoting <span>ST'EM</span> education Science - Technology - Engineering - Math</div>
