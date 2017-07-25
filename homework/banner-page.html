@@ -27,7 +27,6 @@
         h1 {
             margin-top: 100px;
             font-size: 3em;
-            text-align: center;
             font-family: sans-serif;
             color: orangered;
         }
@@ -38,17 +37,15 @@
             height: 0.5px;
             width: 150px;
             display: inline-block;
+            border: none;
         }
         
-        #container {
+        #sub {
             font-style: italic;
-            text-align: center;
             font-size: 1.3em;
             color: gray;
-        }
-        
-        #first {
             margin-top: 40px;
+            line-height: 30px;
         }
         
         span {
@@ -58,13 +55,14 @@
         input {
             margin: 35px;
             display: inline-block;
-            height: 30px;
+            height: 40px;
         }
         
         input[type=email] {
             margin-right: 10px;
-            width: 400px;
+            width: 50%;
             border: 2px solid orangered;
+            text-indent: 5px;
         }
         
         input[type=email]:focus {
@@ -89,15 +87,12 @@
 <body>
     <h1>Teens Programming</h1>
     <hr>
-    
-    <div id="container">
-        <div id="first">Supporting a well-spent life, a bright career and entrepreneurship</div>
-        <div id="second">Promoting <span>ST'EM</span> education Science - Technology - Engineering - Math</div>
-    </div>
 
-    <form action="">
-        <input type="email">
-        <input type="submit">
+    <div id="sub">Supporting a well-spent life, a bright career and entrepreneurship <br> Promoting <span>STEM</span> education Science - Technology - Engineering - Math</div>
+
+    <form action="#">
+        <input type="email" name='email' placeholder="Enter your email">
+        <input id='submit' type="submit">
     </form>
 
 </body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            border: double blue;
+            height: 150px;
+        }
+        
+        .item {
+            border: solid;
+            width: 100px;
+            height: 100px;
+        }
+        
+        #rel {
+            position: relative;
+            top: 10px;
+/*            right: 10px;*/
+            left: 200px;
+        }
+        #second_con {
+            position: relative;
+        }
+        #abs {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .patch {
+            width: 100px;
+            height: 40px;
+            border: solid red;
+        }
+        
+        #fixed {
+            position: fixed;
+            bottom: 0px;
+            right: 10px;
+            background-image: url(/media/img/forest-fog.jpg);
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id='rel'>rel</div>
+        <div class="patch"></div>
+    </div>
+    
+    <ul>
+        <li>absolute is relative to its container which has non-static position</li>
+        <li>relative is relative to its original static position</li>
+        <li>absolute free its space, relative does not</li>
+    </ul>
+    
+    <div class="container" id="second_con">
+        <div class="item" id='abs'>abs</div>
+        <div class="patch"></div>
+        <div class="item" id='fixed'>fixed</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li {
+            display: inline-block;
+            font-size: 2em;
+        }
+        
+        li:before {
+            content: "-";
+            margin: 10px;
+        }
+        
+        li:first-child {
+            color: red;
+        }
+        
+        li:first-child:before {
+            content: ' '
+        }
+        
+        li:nth-child(2) {
+            color: green;
+        }
+        
+        li:nth-child(3) {
+            color: blue;
+        }
+        
+        li:last-child {
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>About</li>
+        <li>Products</li>
+        <li>Blogs</li>
+        <li>Contact</li>
+    </ul>
+</body>
+</html>
