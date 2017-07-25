@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img {
+/*            height: 200px;*/
+        }
+        body {
+            height: 1000px;
+        }
+        #container {
+            border: double blue;
+            height: 150px;
+            width: 400px;
+            
+            overflow: hidden;
+            overflow: visible;
+            overflow: scroll;
+            overflow: auto;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background:lime;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img src="http://www.dogforum.net/signaturepics/sigpic1253_1.gif" alt="">
+    </div>
+    
+    <ul>
+        <li>by default, overflow is visible.</li>
+        <li>overflow scroll always show the scrollbar.</li>
+        <li>overflow auto show bar when neccessary.</li>
+    </ul>
+</body>
+
+</html>

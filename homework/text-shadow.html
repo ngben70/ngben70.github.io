@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <title>Text-shadow</title>
     <style>
+        .neon: before {
+            content: '';
+            height: 100%;
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
         .neon {
             font-weight: 800;
             background-color: black;
             height: 400px;
             color: orange;
+            line-height: 300px;
             font-size: 12em;
             text-align: center;
             text-shadow: 0 -3px 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px gold, 0 0 50px gold, 0 0 60px gold, 0 0 70px gold, 0 0 80px gold, 0 30px 60px orangered, 0 35px 70px orangered, 0 40px 80px red, 0 45px 90px red, 0 50px 100px darkred;
