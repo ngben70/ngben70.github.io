@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Payment</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			padding: 20px;
+		}
+		
+		fieldset {
+			width: 50%;
+			height: 250px;
+			padding: 20px;
+		}
+		
+		legend {
+			font-size: 1.5em;
+		}
+		
+		.label {
+			width: 120px;
+			display: inline-block;
+			/*			vertical-align: middle;*/
+			/*			padding-top: 3px;*/
+			/*			padding-bottom: 10px;*/
+			line-height: 2;
+			/*			margin-right: 70px;*/
+			/*			margin-left: 15px*/
+		}
+		
+		input,select {
+			width: 62%;
+			height: 20px;
+			vertical-align: middle;
+		}
+		
+		textarea {
+			width: 50%;
+			height: 150px;
+		}
+		
+		input[type=radio] {
+			width: auto;
+			margin-left: 10px;
+		}
+		
+		#mastercard {
+			margin-left:0;
+		}
+		
+		input[type=submit] {
+			margin-top: 10px;
+			color: white;
+			background-color: dodgerblue;
+			width: 100px;
+			height: 35px;
+			border: 0.5px solid gray;
+			border-radius: 0.5em;
+		}
+		
+		input[type=submit]:hover {
+			cursor: pointer;
+		}
+		
+		#submit_div {
+			width: 50%;
+			text-align: right;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="">
+		<fieldset>
+			<legend>Payment information</legend>
+			<label for="Name" class='label'>Name</label>
+			<input type="text" placeholder="Please enter your full name">
+			<br>
+			<label for="Email" class='label'>Email</label>
+			<input type="email" placeholder="Please enter your email">
+			<br>
+			<label for="Phone" class='label'>Phone</label>
+			<input type="tel" placeholder="Please enter your phone number">
+			<br>
+			<label for="City" class='label'>City</label>
+			<select name="" id="">
+				<option value="London">London</option>
+				<option value="Toronto">Toronto</option>
+				<option value="Ottawa">Ottawa</option>
+				<option value="Montreal">Montreal</option>
+				<option value="Calgary">Calgary</option>
+				<option value="Vancouver">Vancouver</option>
+			</select>
+			<br>
+			<label for="Payment" class='label'>Payment:</label>
+			<input id='mastercard' type="radio" class='payment' value='master card' checked> Master card
+			<input type="radio" class='payment' value='visa card'> Visa card
+			<input type="radio" class='payment' value='paypal'> Paypal
+		</fieldset>
+
+		<br>
+		<textarea placeholder="Please leave your comments"></textarea>
+
+		<br>
+		<div id='submit_div'>
+			<input type="submit">
+		</div>
+	</form>
+</body>
+
+</html>
