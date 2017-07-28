@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Face</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        #container {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            margin: 20px;
+            box-shadow: 0 0 80px;
+        }
+        
+        #face {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            top: 50px;
+            left: 50px;
+        }
+        
+        #eye1,
+        #eye2 {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            bottom: 175px;
+        }
+        
+        #eye1 {
+            left: 125px
+        }
+        
+        #eye2 {
+            bottom: 225px;
+            left: 225px
+        }
+        
+        #eyebrow1,
+        #eyebrow2 {
+            width: 70px;
+            height: 20px;
+            background-color: black;
+            border-radius: 0.5em;
+        }
+        
+        #eyebrow1 {
+            bottom: 305px;
+            left: 120px;
+            transform: rotate(30deg);
+        }
+        
+        #eyebrow2 {
+            bottom: 325px;
+            left: 212px;
+            transform: rotate(330deg);
+        }
+        
+        #browcorn1,
+        #browcorn2 {
+            width: 30px;
+            height: 20px;
+            background-color: black;
+            border-radius: 0.5em;
+        }
+        
+        #browcorn1 {
+            bottom: 353px;
+            left: 110px;
+            transform: rotate(325deg)
+        }
+        
+        #browcorn2 {
+            bottom: 370px;
+            left: 261px;
+            transform: rotate(47deg)
+        }
+        
+        #mouth {
+            width: 200px;
+            height: 100px;
+            border: solid 15px;
+            border-top-color: transparent;
+            bottom: 250px;
+            left: 100px;
+            border-bottom-left-radius: 110px;
+            border-bottom-right-radius: 110px;
+        }
+        
+        #corner3 {
+            width: 45px;
+            height: 15px;
+            background-color: black;
+            bottom: 365px;
+            left: 268px;
+            border-radius: 1.5em;
+        }
+        
+        h1 {
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="face"></div>
+        <div id="eye1"></div>
+        <div id="eye2"></div>
+        <div id="eyebrow1"></div>
+        <div id="eyebrow2"></div>
+        <div id="browcorn1"></div>
+        <div id="browcorn2"></div>
+        <div id="mouth"></div>
+        <div id="corner3"></div>
+    </div>
+
+    <h1>have a nice day</h1>
+</body>
+</html>
