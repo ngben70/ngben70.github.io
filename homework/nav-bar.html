@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar</title>
+
+    <style>
+            * {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: sans-serif;
+        }
+        
+        #main {
+            background-color: orangered;
+			padding: 10px 20px;
+        }
+        
+        #title {
+            font-size: 20px;
+            display: inline;
+        }
+        
+        nav {
+            background-color: orangered;
+            font-size: 13px;
+            vertical-align: middle;
+			
+            position: absolute;
+            right: 10px;
+			width: 500px;
+			display: inline-block;
+        }
+        
+        a {
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        
+        @media all and (max-width:1000px) {
+            nav {
+				position: static;
+                display: block;
+            }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="title">TEENS PROGRAMMING</div>
+        <nav>
+            <a href="">TECHNOLOGIES</a>
+            <a href="">COURSES</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+        </nav>
+    </div>
+</body>
+</html>
