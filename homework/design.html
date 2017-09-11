@@ -1,126 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Landing Page</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        
-        #intro {
-            width: 100%;
-            display: block;
-            position: relative;
-        }
-        
-        h1 {
-            position: absolute;
-            top: 200px;
-            width: 100%;
-            left: 400px;
-            color: white;
-            font-size: 4em;
-        }
-        
-        h3 {
-            position: absolute;
-            top: 300px;
-            color: white;
-            left: 435px;
-            font-size: 1.5em;
-        }
-        
-        #ipad {
-            float: right;
-            width: 550px;
-            height: 400px;
-            position: relative;
-            right: 100px;
-            margin: 50px 0 50px 0;
-        }
-        
-        #dog {
-            width: 500px;
-            margin: 50px 0 50px 0;
-            position: relative;
-            left: 100px;
-        }
-        
-        #phone {
-            width: 500px;
-            margin: 50px 0 50px 0;
-            position: relative;
-            float: right;
-            right: 100px;
-        }
-        
-        #banner {
-            width: 100%;
-            margin: 50px 0 0 0;
-        }
-        
-        hr {
-            border: solid lightgray;
-            border-width: thin;
-            clear: both;
-        }
-        
-        #main {
-            padding: 10px 20px;
-            color: grey;
-            font-size: 14px;
-            font-weight: 700;
-        }
-        
-        #start {
-            display: inline;
-            position: relative;
-            left: 250px;
-        }
-        
-        nav {
-            vertical-align: middle;
-            position: absolute;
-            right: 10px;
-            width: 300px;
-            display: inline-block;
-        }
-        
-        a {
-            text-decoration: none;
-            margin-right: 10px;
-        }
-    </style>
+<head>
+	<meta charset="UTF-8">
+	<title>Landing Page</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+/*		start navbar */
+		#navbar {
+			padding: 20px;
+			color: grey;
+			font-size: 14px;
+			font-weight: 700;
+		}
+		
+		#logo,
+		#navbar nav {
+			top: 15px;
+		}
+		
+		#logo {
+			display: inline;
+			width: 200px;
+			margin-left: 100px;
+		}
+		
+		#navbar nav {
+			position: absolute;
+			right: 10px;
+			top: 18px;
+			width: 300px;
+			display: inline-block;
+			text-align: right;
+		}
+		
+		#navbar nav ul {
+			list-style: none;
+		}
+		
+		#navbar nav ul li {
+			display: inline-block;
+		}
+		
+		a {
+			text-decoration: none;
+			margin-right: 10px;
+		}
+		
+		
+/*		start intro-bg */
+		.intro-bg {
+			padding: 150px;
+			background-image: url(/media/img/intro-bg.jpg);
+			text-align: center;
+		}
+		
+		#title {
+			color: white;
+			font-size: 4em;
+			font-weight: 700;
+		}
+		
+		#subtitle {
+			color: white;
+			font-size: 1.5em;
+			font-weight: 700;
+		}
+		
+		hr {
+			border: solid lightgray;
+			border-width: thin;
+			clear: both;
+		}
+		
+		hr.whiteline {
+			border: solid white;
+			border-width: thin;
+			width: 350px;
+			margin: 20px auto;
+		}
+		
+		button {
+			width: 140px;
+			height: 50px;
+			background-color: #fff;
+			text-transform: uppercase;
+			border-radius: 0.5em;
+		}
+		
+		button:hover {
+			cursor: pointer;
+		}
+		
+/*		start sections */
+		section {
+			padding: 100px;
+		}
+		
+		.left, .right {
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+/*		'ipad' section */
+		#ipad {
+			width: 550px;
+			height: 400px;
+			margin: 0 20px;
+		}
+		
+		hr.grayline {
+			width: 300px;
+			margin-left: 50px;
+		}
+		
+		.subtitleI {
+			margin: 40px 60px 0px 50px;
+		}
+		
+		.contentI {
+			width: 400px;
+		}
+/*	dog section */
+		#dog {
+			width: 500px;
+			margin: 50px 0 50px 0;
+			position: relative;
+			left: 100px;
+		}
+		
+/*	phone section */
+		#phone {
+			width: 500px;
+			margin: 50px 0 50px 0;
+			position: relative;
+			float: right;
+			right: 100px;
+		}
+		
+/*	banner */
+		#banner {
+			width: 100%;
+			margin: 50px 0 0 0;
+		}
+		
+	</style>
 </head>
 
 <body>
-    <div id="main">
-        <div id="start">Start Bootstrap</div>
-        <nav>
-            <header>
-                <a href="">About</a>
-                <a href="">Services</a>
-                <a href="">Contact</a>
-            </header>
-        </nav>
-    </div>
+	<div id="navbar">
+		<div id="logo">Start Bootstrap</div>
+		<nav>
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Services</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="intro-bg">
+		<div id="title">Landing Page</div>
+		<div id="subtitle">A Template by Start Bootstrap</div>
+		<hr class="whiteline">
+		<button id="twitter">twitter</button>
+		<button id="github">github</button>
+		<button id="linkedin">linkedin</button>
+	</div>
 
-    <div>
-        <img id="intro" src="/media/img/intro-bg.jpg" alt="">
-        <h1>Landing Page</h1>
-        <h3>A Template by Start Bootstrap</h3>
-    </div>
-    <img id="ipad" src="/media/img/ipad.png" alt="">
-    <hr>
-    <img id="dog" src="/media/img/dog.png" alt="">
-    <hr>
-    <img id="phone" src="/media/img/phones.png" alt="">
-    <img id="banner" src="/media/img/banner-bg.jpg" alt="">
-
+	<section>
+		<div class="left">
+			<hr class="grayline">
+			<h2 class="subtitleI">Death to the Stock Photo: <br>Special Thanks</h2>
+			<p class="contentI">A special thanks to
+				<a href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>for providing the photographs that you see in this template. Visit their website to become a member.
+			</p>
+		</div>
+		<div class="right">
+			<img id="ipad" src="/media/img/ipad.png" alt="">
+		</div>
+	</section>
+	<hr>
+	<img id="dog" src="/media/img/dog.png" alt="">
+	<hr>
+	<img id="phone" src="/media/img/phones.png" alt="">
+	<img id="banner" src="/media/img/banner-bg.jpg" alt="">
 </body>
 </html>
